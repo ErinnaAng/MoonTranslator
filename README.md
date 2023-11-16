@@ -36,7 +36,7 @@ Moon'Edge caters to individuals who share a passion for reading online novels, e
 
 ## My Source Code
 
-Source Code for the Navbar, Header, and Sec [here](https://www.youtube.com/watch?v=1wfeqDyMUx4)
+Source Code for the Header, Nav, Section and Sec [here](https://www.youtube.com/watch?v=1wfeqDyMUx4)
 
 ## My Source Image
 
