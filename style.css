@@ -137,6 +137,98 @@ section img#mountain_front{
     transform: translateY(100px);
 }
 
+/* Novels */
+hr {
+    border: 10px solid #1c0522;
+}
+
+.bigbox {
+    box-sizing: border-box;
+    background: #1c0522;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.releases {
+    position: relative;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid #1c0522;
+    padding: 8px 15px;
+}
+
+.releases h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    margin-left: -20px;
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.releases a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.releases a button{
+    text-decoration: none;
+    padding: 5px 8px;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #2b1055;
+    font-size: 1em;
+    position: absolute;
+    right: 0;
+    margin-top: -20px;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.list h3 a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.list h3 a:hover {
+    color: #2b1055;
+}
+
+.article {
+    flex: 0 0 calc(30% - 20px);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+.article:hover {
+    transform: scale(1.05);
+}
+
+.article img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.article h3 {
+    margin-top: 10px;
+    font-size: 1em;
+    text-align: center;
+    color: #fff;
+}
+
 /* About */
 .sec {
     position: relative;
