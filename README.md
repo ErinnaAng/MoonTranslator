@@ -29,9 +29,9 @@ Moon'Edge caters to individuals who share a passion for reading online novels, e
 
 ## Future Plans
 
-- **Enhancements:** Moon'Edge will continue to evolve with enhancements and features based on user feedback.
-  
+- **Enhancements:** Moon'Edge will continue to evolve with enhancements and features based on user feedback. 
 - **Expanded Library:** Expect a growing library of novels as the project progresses, offering a diverse range of genres and themes.
+- **Making Store:** Moon'Edge soon will open a new branch web for selling all kind of goods that still related to the novels.
 
 
 ## My Source Code
