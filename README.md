@@ -30,25 +30,30 @@ Moon'Edge caters to individuals who share a passion for reading online novels, e
 ## Documentation
 
 - **This is the landing page**
-<img width="1242" alt="Screenshot 2023-11-17 211437" src="https://github.com/ErinnaAng/uts-webpro/assets/146809821/8271c702-6268-47b3-a9dd-3cfa2bddb732">
 <br>
+<img width="1242" alt="Screenshot 2023-11-17 211437" src="https://github.com/ErinnaAng/uts-webpro/assets/146809821/8271c702-6268-47b3-a9dd-3cfa2bddb732">
+<br><br>
 
 - **This is the Lastest Update Box**
-<img width="1239" alt="Screenshot 2023-11-17 211457" src="https://github.com/ErinnaAng/uts-webpro/assets/146809821/50896f5f-e1dd-41d1-ba4f-3cd4655f6e84">
 <br>
+<img width="1239" alt="Screenshot 2023-11-17 211457" src="https://github.com/ErinnaAng/uts-webpro/assets/146809821/50896f5f-e1dd-41d1-ba4f-3cd4655f6e84">
+<br><br>
 
 - **This is About Us**
-<img width="1225" alt="Screenshot 2023-11-17 211509" src="https://github.com/ErinnaAng/uts-webpro/assets/146809821/40d2d3dc-07cc-4a13-a170-6b15ad9a9c27">
 <br>
+<img width="1225" alt="Screenshot 2023-11-17 211509" src="https://github.com/ErinnaAng/uts-webpro/assets/146809821/40d2d3dc-07cc-4a13-a170-6b15ad9a9c27">
+<br><br>
 
 - **This is the Login-Sign Up Pop Up**
+<br>
 <img width="1232" alt="Screenshot 2023-11-17 211525" src="https://github.com/ErinnaAng/uts-webpro/assets/146809821/629f92e2-39e1-405a-b43d-31a91c39f7b9">
 <img width="1230" alt="Screenshot 2023-11-17 211539" src="https://github.com/ErinnaAng/uts-webpro/assets/146809821/fad1e1fe-7d3a-4dd8-87f0-6870b0f96ec9">
-<br>
+<br><br>
 
 - **This is the Novels.html page**
-<img width="1241" alt="Screenshot 2023-11-17 211640" src="https://github.com/ErinnaAng/uts-webpro/assets/146809821/953ba248-2724-4040-b686-656897cb1fa5">
 <br>
+<img width="1241" alt="Screenshot 2023-11-17 211640" src="https://github.com/ErinnaAng/uts-webpro/assets/146809821/953ba248-2724-4040-b686-656897cb1fa5">
+<br><br>
 
 - **This is the Search-Bar in Novels.html page**
 <br>
