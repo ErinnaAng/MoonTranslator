@@ -27,20 +27,28 @@ Moon'Edge caters to individuals who share a passion for reading online novels, e
 
 3. **Stay Updated:** Keep track of ongoing novels and receive notifications for new chapters to stay immersed in your favorite stories.
 
+##Documentation
+
+<img width="1242" alt="Screenshot 2023-11-17 211437" src="https://github.com/ErinnaAng/uts-webpro/assets/146809821/8271c702-6268-47b3-a9dd-3cfa2bddb732">
+This is the landing page
+
+<img width="1239" alt="Screenshot 2023-11-17 211457" src="https://github.com/ErinnaAng/uts-webpro/assets/146809821/50896f5f-e1dd-41d1-ba4f-3cd4655f6e84">
+This is the Lastest Update
+
+<img width="1225" alt="Screenshot 2023-11-17 211509" src="https://github.com/ErinnaAng/uts-webpro/assets/146809821/40d2d3dc-07cc-4a13-a170-6b15ad9a9c27">
+This is the About
+
+<img width="1232" alt="Screenshot 2023-11-17 211525" src="https://github.com/ErinnaAng/uts-webpro/assets/146809821/629f92e2-39e1-405a-b43d-31a91c39f7b9">
+<img width="1230" alt="Screenshot 2023-11-17 211539" src="https://github.com/ErinnaAng/uts-webpro/assets/146809821/fad1e1fe-7d3a-4dd8-87f0-6870b0f96ec9">
+This is the Login - Sign Up Popup
+
+<img width="1241" alt="Screenshot 2023-11-17 211640" src="https://github.com/ErinnaAng/uts-webpro/assets/146809821/953ba248-2724-4040-b686-656897cb1fa5">
+This is the Novels.html
+
 ## Future Plans
 
 - **Enhancements:** Moon'Edge will continue to evolve with enhancements and features based on user feedback. 
 - **Expanded Library:** Expect a growing library of novels as the project progresses, offering a diverse range of genres and themes.
 - **Making Store:** Moon'Edge soon will open a new branch web for selling all kind of goods that still related to the novels.
-
-
-## My Source Code
-
-Source Code for the Header, Nav, Section and Sec [here](https://www.youtube.com/watch?v=1wfeqDyMUx4)
-
-## My Source Image
-
-Source Image for header [here](https://drive.google.com/drive/folders/1Anyt4NmNps76aet-2Z4qY0NSYl4bJcFx)
-
 
 *Note: Moon'Edge is a project for my midterm-exam. So the project may be drastically chnage base on the professor assessment rubric*
