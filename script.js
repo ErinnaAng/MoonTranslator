@@ -1,3 +1,26 @@
+// JS For the Login Popup in Home.html Page
+//if we click the login button, the popup will appear
+document.getElementById('login').addEventListener('click', function () {
+    document.querySelector('.popupL').style.display = 'flex';
+})
+
+//if we click the close button, the popup will disappear
+document.getElementById('closeL').addEventListener('click', function () {
+    document.querySelector('.popupL').style.display = 'none';
+})
+
+// JS For the Sign Up Popup in Home.html Page
+//if we click the sign up button, the popup will appear
+document.getElementById('signup').addEventListener('click', function () {
+    document.querySelector('.popupS').style.display = 'flex';
+})
+
+//if we click the close button, the popup will disappear
+document.getElementById('closeS').addEventListener('click', function () {
+    document.querySelector('.popupS').style.display = 'none';
+})
+
+
 // JS For the Search Bar in Novel.html Page
 
 document.addEventListener('DOMContentLoaded', function () {
