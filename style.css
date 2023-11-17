@@ -137,6 +137,56 @@ section img#mountain_front{
     transform: translateY(100px);
 }
 
+/* Search Novels*/
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    position: relative;
+}
+
+.search-box {
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.search {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #fff;
+    background: none;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+}
+
+.search-results {
+    position: absolute;
+    margin-left: 20px;
+    margin-right: 10px;
+    top: 100%;
+    left: 0;
+    width: 90%;
+    max-height: 200px;
+    overflow-y: auto; /*This is for adding a scroll bar*/
+    border: 1px solid #fff;
+    box-shadow: 0 2px 4px #0000001a;
+    background-color: #1c0522;
+    display: none; /*This one is for hide the result before*/
+}
+
+.search-results .article {
+    margin: 10px;
+    padding: 10px;
+    background-color: #1c0522
+}
+
+.search-results .article h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #fff;
+}
+
 /* Novels */
 hr {
     border: 10px solid #1c0522;
