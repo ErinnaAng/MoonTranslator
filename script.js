@@ -20,36 +20,46 @@ document.getElementById('closeS').addEventListener('click', function () {
     document.querySelector('.popupS').style.display = 'none';
 })
 
-// JS For User Validation in Signup
-function validation() {
-    var username = document.FormSignup.username;
-    var email = document.FormSignup.email;
-    var password = document.FormSignup.password;
-    var confirmPassword = document.FormSignup.confirmPassword;
 
-    // Create an instance of the InputValidator class
-    const validator = new InputValidator();
+// Module for input validation Sign Up
+function validateform() {
+    var isValid = true;
+    var nameInput = document.getElementById("name").value;
+    var emailInput = document.getElementById("email").value;
+    var passwordInput = document.getElementById("password").value;
+    var confirmPasswordInput = document.getElementById("Cpassword").value;
 
-    // Validate input
-    validator.validateUsername(username.value);
-    validator.validateEmail(email.value);
-    validator.validatePassword(password.value);
-    validator.validateConfirmPassword(password.value, confirmPassword.value);
-
-    // Display error messages if any
-    if (validator.errors.length > 0) {
-        alert("Validation errors:\n" + validator.errors.join("\n"));
-        return false; // Prevent form submission if there are errors
-    } else {
-        alert("Form submitted successfully!");
-        // You can remove the following line if you want the form to submit
-        // return true;
+    if (nameInput === "") {
+        isValid = false;
+        alert("Name cannot be empty");
     }
+
+    var emailPattern = /\S+@\S+\.\S+/;
+    if (!emailPattern.test(emailInput)) {
+        isValid = false;
+        alert("Invalid email address");
+    }
+
+    var passwordPattern = /^(?=.*[0-9])(?=.*[A-Z])[a-zA-Z0-9]{8,}$/;
+    if (!passwordPattern.test(passwordInput)) {
+        isValid = false;
+        alert("Password must be at least 8 characters long and contain at least one uppercase letter and one number");
+    }
+
+    if (confirmPasswordInput === "") {
+        isValid = false;
+        alert("Confirm Password cannot be empty");
+    }
+
+    if (isValid) {
+        alert("Form submitted successfully!");
+    }
+
+    return isValid; // Return the isValid value to allow or prevent form submission
 }
 
 
 // JS For the Search Bar in Novel.html Page
-
 document.addEventListener('DOMContentLoaded', function () {
     var input = document.getElementById('novelSearch');
     var list = document.querySelector('.list');
