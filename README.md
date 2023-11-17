@@ -50,7 +50,7 @@ Moon'Edge caters to individuals who share a passion for reading online novels, e
 <img width="1241" alt="Screenshot 2023-11-17 211640" src="https://github.com/ErinnaAng/uts-webpro/assets/146809821/953ba248-2724-4040-b686-656897cb1fa5">
 <br>
 
--- **This is the Search-Bar in Novels.html page**
+- **This is the Search-Bar in Novels.html page**
 <br>
 <img width="421" alt="Screenshot 2023-11-17 224345" src="https://github.com/ErinnaAng/uts-webpro/assets/146809821/943aa68a-a218-417c-9240-e2bb256fce9b">
 <br>
