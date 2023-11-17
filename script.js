@@ -20,6 +20,26 @@ document.getElementById('closeS').addEventListener('click', function () {
     document.querySelector('.popupS').style.display = 'none';
 })
 
+//JS For Validate User in Regis menu
+function validate() {
+    if(document.Formfill.Username.value==''){
+        document.getElementById('error').innerHTML = "Username must be filled";
+        return false;
+    }
+    else if (document.Formfill.Email.value==''){
+        document.getElementById('error').innerHTML = "Email must be filled";
+        return false;
+    }
+    else if (document.Formfill.Email.value==''){
+        document.getElementById('error').innerHTML = "Email must be filled";
+        return false;
+    }
+    else if (document.Formfill.Password.value==''){
+        document.getElementById('error').innerHTML = "Password must be filled";
+        return false;
+    }
+}
+
 
 // JS For the Search Bar in Novel.html Page
 
