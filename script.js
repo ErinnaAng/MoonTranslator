@@ -20,23 +20,30 @@ document.getElementById('closeS').addEventListener('click', function () {
     document.querySelector('.popupS').style.display = 'none';
 })
 
-//JS For Validate User in Regis menu
-function validate() {
-    if(document.Formfill.Username.value==''){
-        document.getElementById('error').innerHTML = "Username must be filled";
-        return false;
-    }
-    else if (document.Formfill.Email.value==''){
-        document.getElementById('error').innerHTML = "Email must be filled";
-        return false;
-    }
-    else if (document.Formfill.Email.value==''){
-        document.getElementById('error').innerHTML = "Email must be filled";
-        return false;
-    }
-    else if (document.Formfill.Password.value==''){
-        document.getElementById('error').innerHTML = "Password must be filled";
-        return false;
+// JS For User Validation in Signup
+function validation() {
+    var username = document.FormSignup.username;
+    var email = document.FormSignup.email;
+    var password = document.FormSignup.password;
+    var confirmPassword = document.FormSignup.confirmPassword;
+
+    // Create an instance of the InputValidator class
+    const validator = new InputValidator();
+
+    // Validate input
+    validator.validateUsername(username.value);
+    validator.validateEmail(email.value);
+    validator.validatePassword(password.value);
+    validator.validateConfirmPassword(password.value, confirmPassword.value);
+
+    // Display error messages if any
+    if (validator.errors.length > 0) {
+        alert("Validation errors:\n" + validator.errors.join("\n"));
+        return false; // Prevent form submission if there are errors
+    } else {
+        alert("Form submitted successfully!");
+        // You can remove the following line if you want the form to submit
+        // return true;
     }
 }
 
