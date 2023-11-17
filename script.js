@@ -1,64 +1,3 @@
-// JS For the Login Popup in Home.html Page
-//if we click the login button, the popup will appear
-document.getElementById('login').addEventListener('click', function () {
-    document.querySelector('.popupL').style.display = 'flex';
-})
-
-//if we click the close button, the popup will disappear
-document.getElementById('closeL').addEventListener('click', function () {
-    document.querySelector('.popupL').style.display = 'none';
-})
-
-// JS For the Sign Up Popup in Home.html Page
-//if we click the sign up button, the popup will appear
-document.getElementById('signup').addEventListener('click', function () {
-    document.querySelector('.popupS').style.display = 'flex';
-})
-
-//if we click the close button, the popup will disappear
-document.getElementById('closeS').addEventListener('click', function () {
-    document.querySelector('.popupS').style.display = 'none';
-})
-
-
-// Module for input validation Sign Up
-function validateform() {
-    var isValid = true;
-    var nameInput = document.getElementById("name").value;
-    var emailInput = document.getElementById("email").value;
-    var passwordInput = document.getElementById("password").value;
-    var confirmPasswordInput = document.getElementById("Cpassword").value;
-
-    if (nameInput === "") {
-        isValid = false;
-        alert("Name cannot be empty");
-    }
-
-    var emailPattern = /\S+@\S+\.\S+/;
-    if (!emailPattern.test(emailInput)) {
-        isValid = false;
-        alert("Invalid email address");
-    }
-
-    var passwordPattern = /^(?=.*[0-9])(?=.*[A-Z])[a-zA-Z0-9]{8,}$/;
-    if (!passwordPattern.test(passwordInput)) {
-        isValid = false;
-        alert("Password must be at least 8 characters long and contain at least one uppercase letter and one number");
-    }
-
-    if (confirmPasswordInput === "") {
-        isValid = false;
-        alert("Confirm Password cannot be empty");
-    }
-
-    if (isValid) {
-        alert("Form submitted successfully!");
-    }
-
-    return isValid; // Return the isValid value to allow or prevent form submission
-}
-
-
 // JS For the Search Bar in Novel.html Page
 document.addEventListener('DOMContentLoaded', function () {
     var input = document.getElementById('novelSearch');
@@ -104,3 +43,61 @@ document.addEventListener('DOMContentLoaded', function () {
         searchResultsContainer.style.display = searchTerm ? 'block' : 'none';
     });
 });
+
+// JS For the Login Popup in Home.html Page
+//if we click the login button, the popup will appear
+document.getElementById('login').addEventListener('click', function () {
+    document.querySelector('.popupL').style.display = 'flex';
+})
+//if we click the close button, the popup will disappear
+document.getElementById('closeL').addEventListener('click', function () {
+    document.querySelector('.popupL').style.display = 'none';
+})
+
+// JS For the Sign Up Popup in Home.html Page
+//if we click the sign up button, the popup will appear
+document.getElementById('signup').addEventListener('click', function () {
+    document.querySelector('.popupS').style.display = 'flex';
+})
+
+//if we click the close button, the popup will disappear
+document.getElementById('closeS').addEventListener('click', function () {
+    document.querySelector('.popupS').style.display = 'none';
+})
+
+// Module for input validation Sign Up
+function validateform() {
+    var isValid = true;
+    var nameInput = document.getElementById("name").value;
+    var emailInput = document.getElementById("email").value;
+    var passwordInput = document.getElementById("password").value;
+    var confirmPasswordInput = document.getElementById("Cpassword").value;
+
+    if (nameInput === "") {
+        isValid = false;
+        alert("Name cannot be empty");
+    }
+
+    var emailPattern = /\S+@\S+\.\S+/;
+    if (!emailPattern.test(emailInput)) {
+        isValid = false;
+        alert("Invalid email address");
+    }
+
+    var passwordPattern = /^(?=.*[0-9])(?=.*[A-Z])[a-zA-Z0-9]{8,}$/;
+    if (!passwordPattern.test(passwordInput)) {
+        isValid = false;
+        alert("Password must be at least 8 characters long and contain at least one uppercase letter and one number");
+    }
+
+    if (confirmPasswordInput === "") {
+        isValid = false;
+        alert("Confirm Password cannot be empty");
+    }
+
+    if (isValid) {
+        alert("Form submitted successfully!");
+    }
+
+    return isValid; // Return the isValid value to allow or prevent form submission
+}
