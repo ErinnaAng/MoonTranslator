@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Moon'Edge Home</title>
+        <title>Moon'Edge Translator</title>
+        <link rel="icon" href="image\header\icon-moon.png" type="image/icon type">
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
@@ -10,10 +11,10 @@
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="Novels.html">Novels</a></li>
+                    <li><a href="Novels.html#novels">Novels</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#">Login</a></li>
-                    <li><a href="#">Sign up</a></li>
+                    <li><a href="#popupL" id="login">Login</a></li>
+                    <li><a href="#popupS" id="signup">Signup</a></li>
                 </ul>
             </nav>
         </header>
@@ -50,32 +51,6 @@
                 </div>
             </div>
         </div>
-
-                <div id="popup" class="popupL">
-            <div class="popup-content">
-                <h2>Log In</h2>
-                <form action="Novels.html" name="FormLogin">
-                    <img src="image/icon/icon-close.png" alt="close" id="closeL" class="close">
-                    <input type="text" id="usernameL" placeholder="Username" required>
-                    <input type="password" id="passwordL" placeholder="Password" required>
-                    <button type="submit">Log In</button>
-                </form>
-            </div>
-        </div>
-
-        <div id="popup" class="popupS">
-            <div class="popup-content">
-                <h2>Sign Up</h2>
-                <form action="Novels.html" name="FormSignup" onsubmit="return validation ()">
-                    <img src="image/icon/icon-close.png" alt="close" id="closeS" class="close">
-                    <input type="text" placeholder="Username" required>  
-                    <input type="email" placeholder="Email" required>
-                    <input type="password" placeholder="Password" required>              
-                    <input type="password" placeholder="Comfirm Password" required>          
-                    <button type="submit">Sign Up</button>
-                </form>
-            </div>
-        </div>
         
         <div id="about" class="sec">
             <div class="releases">
@@ -83,10 +58,10 @@
             </div>
             <p>Welcome to Moon'Edge, where we open a window to the world of
                 Korean novels and weave a bridge between language and culture.
-                From here, I'll call you Moon, and you can call me Edge.
                 Moon'Edge is a Korean novel translation platform that not only 
                 provides access to popular Korean novels but also offers a diverse 
                 range of merchandise inspired by the beautiful world of novels.
+                From Here I'll call you Moon. Welcome to Moon'Edge Moon
                 <br><br><br>
             </p>
 
@@ -104,6 +79,32 @@
             </ul>
         </div>
 
+        <div id="popup" class="popupL">
+            <div class="popup-content">
+                <h2>Log In</h2>
+                <form action="Novels.html" name="FormLogin">
+                    <img src="image/icon/icon-close.png" alt="close" id="closeL" class="close">
+                    <input type="text" id="username" placeholder="Username" required>
+                    <input type="password" id="passwordL" placeholder="Password" required>
+                    <button type="submit">Log In</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="popup" class="popupS">
+            <div class="popup-content">
+                <h2>Sign Up</h2>
+                <form action="#" name="FormSignup" id="signForm" class="signForm" onsubmit="validateform()">
+                    <img src="image/icon/icon-close.png" alt="close" id="closeS" class="close">
+                    <input type="text" id="name" class="required" placeholder="Username" required>  
+                    <input type="email" id="email" class="required-email" placeholder="Email" required>
+                    <input type="password" id="password" class="required-password" placeholder="Password" required>              
+                    <input type="password" id="Cpassword" class="required-Cpassword" placeholder="Confirm Password" required>          
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>        
+
         <footer>
             <div class="links">
             <a href="#home">Home</a>
@@ -115,5 +116,7 @@
                 <p>Created by <a href="">ErinnaAng</a>. | &copy; 2023.</p>
             </div>
         </footer>
+
+        <script src="script.js"></script>
     </body>
 </html>
