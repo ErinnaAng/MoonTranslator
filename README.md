@@ -50,6 +50,11 @@ Moon'Edge caters to individuals who share a passion for reading online novels, e
 <img width="1230" alt="Screenshot 2023-11-17 211539" src="https://github.com/ErinnaAng/uts-webpro/assets/146809821/fad1e1fe-7d3a-4dd8-87f0-6870b0f96ec9">
 <br><br>
 
+- **This is the Uver Validation for Sign Up Pop up**
+<br>
+<img width="1245" alt="Screenshot 2023-11-17 211604" src="https://github.com/ErinnaAng/uts-webpro/assets/146809821/7c7b3807-3309-49c5-bc12-1ded1a8de60c">
+<br><br>
+
 - **This is the Novels.html page**
 <br>
 <img width="1241" alt="Screenshot 2023-11-17 211640" src="https://github.com/ErinnaAng/uts-webpro/assets/146809821/953ba248-2724-4040-b686-656897cb1fa5">
