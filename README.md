@@ -65,9 +65,6 @@ Moon'Edge caters to individuals who share a passion for reading online novels, e
 <img width="421" alt="Screenshot 2023-11-17 224345" src="https://github.com/ErinnaAng/uts-webpro/assets/146809821/943aa68a-a218-417c-9240-e2bb256fce9b">
 <br>
 
-- Testing
-<img width="1280" alt="Screenshot 2023-11-14 143024" src="https://github.com/ErinnaAng/uts-webpro/assets/146809821/1a7a5e36-74fe-49b6-b86b-7217db0c5122">
-
 ## Future Plans
 
 - **Enhancements:** Moon'Edge will continue to evolve with enhancements and features based on user feedback. 
