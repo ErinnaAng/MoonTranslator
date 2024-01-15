@@ -6,13 +6,24 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
+
+        <?php 
+	        session_start();
+    
+	        // cek apakah yang mengakses halaman ini sudah login
+	        if($_SESSION['usertype']==""){
+		        header("location:index.php?pesan=gagal");
+	        }
+        ?>
+
         <header id="home">
-            <a href="Home.html" class="logo">MT</a>
+            <a href="Home.php" class="logo">MT</a>
             <nav>
                 <ul>
-                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="homeUser.php">Home</a></li>
                     <li><a href="#novels">Novels</a></li>
-                    <li><a href="Home.html#about">About</a></li>
+                    <li><a href="homeUser.php#about">About</a></li>
+                    <li><a href="logout.php">Log Out</a></li>
                 </ul>
                 <div class="search-container">
                     <div class="search-box">
@@ -80,9 +91,9 @@
 
         <footer>
             <div class="links">
-            <a href="Home.html">Home</a>
+            <a href="homeUser.php">Home</a>
             <a href="#novels">Novels</a>
-            <a href="Home.html#about">About</a>
+            <a href="homeUser.php#about">About</a>
             </div>
     
             <div class="credit">
