@@ -115,6 +115,14 @@ section img#mountain_front{
     width: 100%;
 }
 
+#textLogin {
+    position: absolute;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 5em;
+    z-index: 9;
+}
+
 #text {
     position: absolute;
     color: #fff;
@@ -146,6 +154,7 @@ section img#mountain_front{
 .search-box {
     margin-right: 10px;
     margin-left: 20px;
+    align-items: center;
 }
 
 .search {
@@ -247,7 +256,7 @@ hr {
 }
 
 .list h3 a:hover {
-    color: #2b1055;
+    color: #C154C1; 
 }
 
 .article {
@@ -311,7 +320,6 @@ hr {
 
 /*pop up login Sign Up*/
 .popupL, .popupS {
-    background: rgba(0,0,0,0.5);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -320,7 +328,7 @@ hr {
     justify-content: center;
     align-items: center;
     text-align: center;
-    z-index: 100000;
+    z-index: 900000;
 }
 
 .close{
@@ -374,6 +382,17 @@ hr {
 .popup-content button:hover {
     background: #2b1055;
     color: #ffffff;
+}
+
+.alert {
+    padding: 10px;
+    margin: bottom 15px;
+    background-color: #f44336;
+    color: white;
+    margin-bottom: 15px;
+    z-index: 1000000;
+    justify-content: center;
+    font-size: 0.8em;
 }
 
 /*Forum*/
