@@ -6,15 +6,24 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
+
+        <?php 
+	        session_start();
+    
+	        // cek apakah yang mengakses halaman ini sudah login
+	        if($_SESSION['usertype']==""){
+		        header("location:index.php?pesan=gagal");
+	        }
+        ?>
+        
         <header id="home">
             <a href="#home" class="logo">MT</a>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="Novels.html#novels">Novels</a></li>
+                    <li><a href="novel.php#novels">Novels</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#popupL" id="login">Login</a></li>
-                    <li><a href="#popupS" id="signup">Signup</a></li>
+                    <li><a href="logout.php">Log Out</a></li>
                 </ul>
             </nav>
         </header>
@@ -22,8 +31,8 @@
             <img src="image\header\stars.png" id="stars">
             <img src="image\header\moon.png" id="moon">
             <img src="image\header\mountains_behind.png" id="mountains_behind">
-            <h2 id="text">Hello Moon!</h2>
-            <a href="Novels.html" id="btn">Let's Read</a>
+            <h2 id="textLogin"> Hi, <?php echo $_SESSION['username']; ?>! </h2>
+            <a href="novel.php" id="btn">Let's Read</a>
             <img src="image\header\mountains_front.png" id="mountains_front">
         </section>
         <hr><hr><hr>
@@ -31,7 +40,7 @@
         <div id="novels" class="bigbox">
             <div class="releases">
                 <h2>Latest Update</h2>
-                <a href="Novels.html"><button>view all</button></a>
+                <a href="novel.php"><button>view all</button></a>
             </div>
 
             <div class="list">
@@ -79,36 +88,10 @@
             </ul>
         </div>
 
-        <div id="popup" class="popupL">
-            <div class="popup-content">
-                <h2>Log In</h2>
-                <form action="Novels.html" name="FormLogin">
-                    <img src="image/icon/icon-close.png" alt="close" id="closeL" class="close">
-                    <input type="text" id="username" placeholder="Username" required>
-                    <input type="password" id="passwordL" placeholder="Password" required>
-                    <button type="submit">Log In</button>
-                </form>
-            </div>
-        </div>
-
-        <div id="popup" class="popupS">
-            <div class="popup-content">
-                <h2>Sign Up</h2>
-                <form action="#" name="FormSignup" id="signForm" class="signForm" onsubmit="validateform()">
-                    <img src="image/icon/icon-close.png" alt="close" id="closeS" class="close">
-                    <input type="text" id="name" class="required" placeholder="Username" required>  
-                    <input type="email" id="email" class="required-email" placeholder="Email" required>
-                    <input type="password" id="password" class="required-password" placeholder="Password" required>              
-                    <input type="password" id="Cpassword" class="required-Cpassword" placeholder="Confirm Password" required>          
-                    <button type="submit">Sign Up</button>
-                </form>
-            </div>
-        </div>        
-
         <footer>
             <div class="links">
             <a href="#home">Home</a>
-            <a href="Novels.html">Novels</a>
+            <a href="novel.php">Novels</a>
             <a href="#about">About</a>
             </div>
     
