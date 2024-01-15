@@ -22,8 +22,13 @@ document.addEventListener('DOMContentLoaded', function () {
             var title = article.querySelector('h3 a').textContent.toLowerCase();
 
             if (title.includes(searchTerm)) {
-                // If found, create a clone of the article and append it to the fragment
+                // If found, create a clone of the article
                 var clone = article.cloneNode(true);
+
+                // Add a class to the cloned element
+                clone.classList.add('smaller-size');
+
+                // Append it to the fragment
                 fragment.appendChild(clone);
 
                 // Increment the counter
@@ -44,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// JS For the Login Popup in Home.html Page
+// JS For the Login Popup in index.php Page
 //if we click the login button, the popup will appear
 document.getElementById('login').addEventListener('click', function () {
     document.querySelector('.popupL').style.display = 'flex';
@@ -54,7 +59,17 @@ document.getElementById('closeL').addEventListener('click', function () {
     document.querySelector('.popupL').style.display = 'none';
 })
 
-// JS For the Sign Up Popup in Home.html Page
+// Automatically close alert after 5 seconds
+document.addEventListener('DOMContentLoaded', function () {
+    var alertPopup = document.getElementById('alertPopup');
+    if (alertPopup) {
+        setTimeout(function () {
+            alertPopup.style.display = 'none';
+        }, 5000); // 5000 milliseconds = 5 seconds
+    }
+});
+
+// JS For the Sign Up Popup in index.php Page
 //if we click the sign up button, the popup will appear
 document.getElementById('signup').addEventListener('click', function () {
     document.querySelector('.popupS').style.display = 'flex';
@@ -97,6 +112,7 @@ function validateform() {
 
     if (isValid) {
         alert("Form submitted successfully!");
+        window.location.href('homeUser.php');
     }
 
     return isValid; // Return the isValid value to allow or prevent form submission
