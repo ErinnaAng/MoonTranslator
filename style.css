@@ -71,6 +71,7 @@ nav ul li a:hover{
     color: #2b1055;
 }
 
+
 /*Image header Moon'Edge*/
 section {
     position: relative;
@@ -142,6 +143,7 @@ section img#mountain_front{
     z-index: 9;
     transform: translateY(100px);
 }
+
 
 /* Search Bar for Novels*/
 .search-container {
@@ -288,6 +290,246 @@ hr {
     color: #fff;
 }
 
+.buttonBox{
+    display: flex;
+    margin-top: 10px;
+}
+
+.buttonBox a button{
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #2b1055;
+    font-size: 1em;
+    display: flex;
+}
+
+.buttonBox a button:hover{
+    background: #2b1055;
+    color: #ffffff;
+}
+
+/* detailNovel */
+main {
+    position: relative;
+    padding: 100px;
+    background: #1c0522;
+    width: 100%;
+    flex-grow: 1;
+    visibility: visible;
+}
+
+#novelDetail {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 30px, 0;
+    width: 100%;
+
+}
+
+.novelheader {
+    position: relative;
+    width: 100%;
+    padding-bottom: 1rem;
+    margin-top: 0;
+    display: block;
+    z-index: 1;
+}
+
+.glassBackground {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+}
+
+.glassBackground img {
+    margin: -35%;
+    height: 200%;
+    width: 200%;
+    object-fit: cover;
+    filter: blur(40px);
+    box-sizing: border-box;
+}
+
+.glassShade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: var(--glass-opacity);
+    box-sizing: border-box;
+    display: block;
+}
+
+.header-bodyContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 0, auto;
+    height: 100%;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.fixed-img {
+    position: initial;
+    z-index: 1;
+    flex: 0 0 258px;
+    height: 100%;
+    max-height: 100%;
+    margin-right: 20px;
+    display: block;
+    box-sizing: border-box;
+}
+
+.Cover {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.Cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    box-sizing: border-box;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.novelInfo {
+    flex: 1 1 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.main-head {
+    padding: 0;
+    margin-bottom: 10px;
+    order: 0;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+}
+
+.main-head h1 {
+    font-weight: 700;
+    font-size: 2.2em;
+    line-height: 1.2;
+    margin-bottom: 4px;
+    color: #1c0522;
+    margin: 0;
+}
+
+.links {
+    align-items: flex-end;
+    margin-bottom: 0;
+    margin-top: 10px;
+    order: 4;
+    margin: auto 0 auto;
+    box-sizing: border-box;
+}
+
+.buttonlinks {
+    width: 100%;
+    height: 50px;
+    padding: 0, 10px;
+    border-radius: 6px;
+    font-size: 1em;
+    border: 1px solid transparent;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-transform: uppercase;
+    line-height: 1.9;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.buttonlinks button {
+    width: 100%;
+    background-color: #1c0522;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.buttonlinks button:hover {
+    background-color: #fff;
+    color: #1c0522;
+}
+
+/* Synopsis */
+.novel-body {
+    width: 100%;
+    margin: 0 auto;
+    padding: 13px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#infoSum {
+    box-sizing: border-box;
+    display: block;
+}
+
+.summary {
+    margin-bottom: 2rem;
+    box-sizing: border-box;
+    display: block;
+}
+
+.lined {
+    font-size: 3em;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    line-height: normal;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.summary-content {
+    font-size: 1.2em;
+    line-height: 24px;
+    overflow:  hidden;
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+}
+
+.summary-content p {
+    margin-top: 30px;
+    padding: 0;
+    box-sizing: border-box;
+    display: block;
+    color: #fff;
+    word-break: break-all;
+}
 
 /* About */
 .sec {
@@ -317,18 +559,42 @@ hr {
     border-radius: 6px;
 }
 
+/*upload*/
+.upload {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    position: relative;
+}
+
+.upload-button {
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #2b1055;
+    font-size: 1.5em;
+    right: 0;
+    margin-top: -10px;
+}
+
+.upload-button:hover {
+    background: #2b1055;
+    color: #ffffff;
+}
 
 /*pop up login Sign Up*/
-.popupL, .popupS {
+.popupL, .popupS, .popupU {
     width: 100%;
     height: 100%;
     position: absolute;
     display: none;
+    background: rgba(0,0,0,0.3);
     top: 0;
     justify-content: center;
     align-items: center;
     text-align: center;
-    z-index: 900000;
+    z-index: 9000000;
 }
 
 .close{
@@ -368,6 +634,14 @@ hr {
     border-radius: 5px;
 }
 
+.popup-content label {
+    color: #fff;
+    font-size: 1em;
+    margin: -20px auto 10px;
+    display: block;
+    text-align: left;
+}
+
 .popup-content button {
     margin: 20px auto;
     display: block;
@@ -395,47 +669,38 @@ hr {
     font-size: 0.8em;
 }
 
-/*Forum*/
-.comment {
-    position: relative;
-    padding: 100px;
-    background: #1c0522;
-}
-
-.comment h2 {
-    font-size: 3.5em;
-    margin-bottom: 10px;
-    color: #fff;
-}
-
-.comment-box {
-    box-sizing: border-box;
-}
-
 .login-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 400px;
     margin: 0 auto;
-   }
-   
-   .login-container form {
+}
+
+.login-container form {
     display: flex;
     flex-direction: column;
     width: 100%;
-   }
-   
-   .login-container input {
+}
+
+.login-container input {
     margin-bottom: 10px;
     padding: 8px;
     font-size: 14px;
-   }
+}
    
-   .login-container button {
+.login-container button {
     padding: 8px;
     font-size: 14px;
-   }
+}
+
+/* PopupU */
+#sipnosis
+{
+    width: 300px;
+    height: 250px;
+}
+
 
 /* Footer */
 footer {
