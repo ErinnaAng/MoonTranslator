@@ -68,7 +68,7 @@
                     <textarea name="synopsis" id="synopsis" class="formUpload" placeholder="Summary..."></textarea><br><br><br>
                     <label for="cover">Foto:</label>
                     <input type="file" id="cover" name="cover"><br><br>
-                    <button type="submit">Sign Up</button>
+                    <button type="submit">Upload</button>
                 </form>
             </div>
         </div>
