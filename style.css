@@ -584,7 +584,7 @@ main {
 }
 
 /*pop up login Sign Up*/
-.popupL, .popupS, .popupU {
+.popupL, .popupS, .popupU .popupDN{
     width: 100%;
     height: 100%;
     position: absolute;
