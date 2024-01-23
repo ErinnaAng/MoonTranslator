@@ -1,3 +1,11 @@
+<?php
+include "dbconfig.php";
+include "formHandler.php";
+
+$query = "SELECT * FROM title";
+$result = $database->query($query);
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -48,26 +56,26 @@
         <div id="novels" class="bigbox">
             <div class="releases">
                 <h2>Latest Update</h2>
-                <a href="Novel.php"><button>view all</button></a>
+                <a href="novel.php"><button>View All</button></a>
             </div>
 
             <div class="list">
-                <div class="article">
-                    <a href="#"><img src="image\novels\tcf.jpg"></a>
-                    <h3><a href="#">Trash of the Count's Family</a></h3>
-                </div>
+                <?php
+                $query = "SELECT * FROM title";
+                $result = $database->query($query);
 
-                <div class="article">
-                    <a href="#"><img src="image\novels\rim.jpg"></a>
-                    <h3><a href="#">Regressor Instruction Manual</a></h3>
-                </div>
-
-                <div class="article">
-                    <a href="#"><img src="image\novels\twsb.jpg"></a>
-                    <h3><a href="#">What Happens When the Second Male Lead Powers Up</a></h3>
-                </div>
+                while ($row = $database->fetchAssoc($result)) {
+                    ?>
+                    <div class="article">
+                        <a href="detailNovel.php?id=<?= $row['id_title'] ?>">
+                            <img src="image/novels/<?= $row['cover'] ?>">
+                        </a>
+                        <h3><a href="detailNovel.php?id=<?= $row['id_title'] ?>"><?= $row['title'] ?></a></h3>
+                    </div>
+                <?php } ?>
             </div>
         </div>
+
         
         <div id="about" class="sec">
             <div class="releases">
@@ -99,13 +107,11 @@
         <div id="popup" class="popupL">
             <div class="popup-content">
                 <h2>Log In</h2>
-                <form action="cek_login.php" method="post" name="FormLogin">
+                <form action="login.php" method="post" name="FormLogin">
                     <img src="image/icon/icon-close.png" alt="close" id="closeL" class="close">
                     <input type="text" name="username" id="username" class="formLogin" placeholder="Username" required>
                     <input type="password" name="password" id="passwordL" class="formLogin" placeholder="Password" required>
                     <button type="submit">Log In</button>
-                </form>
-
                 </form>
             </div>
         </div>
