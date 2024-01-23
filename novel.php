@@ -1,3 +1,11 @@
+<?php
+include "dbconfig.php";
+include "formHandler.php";
+
+$query = "SELECT * FROM title";
+$result = $database->query($query);
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -38,54 +46,23 @@
 
         <div id="novels" class="bigbox">
             <div class="releases">
-                <h2>Popular</h2>
+                <h2>Latest Update</h2>
             </div>
 
             <div class="list">
-                <div class="article">
-                    <a href="#"><img src="image\novels\tcf.jpg"></a>
-                    <h3><a href="#">Trash of the Count's Family</a></h3>
-                </div>
+                <?php
+                $query = "SELECT * FROM title";
+                $result = $database->query($query);
 
-                <div class="article">
-                    <a href="#"><img src="image\novels\rim.jpg"></a>
-                    <h3><a href="#">Regressor Instruction Manual</a></h3>
-                </div>
-
-                <div class="article">
-                    <a href="#"><img src="image\novels\omv.jpg"></a>
-                    <h3><a href="#">Omniscient Reader's Viewpoint</a></h3>
-                </div>
-
-                <div class="article">
-                    <a href="#"><img src="image\novels\twsb.jpg"></a>
-                    <h3><a href="#">What Happens When the Second Male Lead Powers Up</a></h3>
-                </div>
-
-                <div class="article">
-                    <a href="#"><img src="image\novels\sss.jpg"></a>
-                    <h3><a href="#">The S-Classes That I Raised</a></h3>
-                </div>
-
-                <div class="article">
-                    <a href="#"><img src="image\novels\sl.jpg"></a>
-                    <h3><a href="#">Solo Leveling</a></h3>
-                </div>
-
-                <div class="article">
-                    <a href="#"><img src="image\novels\htlep.jpg"></a>
-                    <h3><a href="#">How to Live as the Enemy Prince</a></h3>
-                </div>
-
-                <div class="article">
-                    <a href="#"><img src="image\novels\sf0.jpg"></a>
-                    <h3><a href="#">Superstar From Age 0</a></h3>
-                </div>
-
-                <div class="article">
-                    <a href="#"><img src="image\novels\twgn.jpg"></a>
-                    <h3><a href="#">Trapped in a Webnovel as a Good-For-Nothing</a></h3>
-                </div>
+                while ($row = $database->fetchAssoc($result)) {
+                    ?>
+                    <div class="article">
+                        <a href="detailNovel.php?id=<?= $row['id_title'] ?>">
+                            <img src="image/novels/<?= $row['cover'] ?>">
+                        </a>
+                        <h3><a href="detailNovel.php?id=<?= $row['id_title'] ?>"><?= $row['title'] ?></a></h3>
+                    </div>
+                <?php } ?>
             </div>
         </div>
 
