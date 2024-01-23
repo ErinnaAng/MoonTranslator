@@ -1,3 +1,11 @@
+<?php
+include "dbconfig.php";
+include "formHandler.php";
+
+$query = "SELECT * FROM title";
+$result = $database->query($query);
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -21,8 +29,7 @@
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#">Project</a></li>
-                    <li><a href="#">Upload</a></li>
+                    <li><a href="novel_admin.php">Upload</a></li>
                     <li><a href="logout.php">Log Out</a></li>
                 </ul>
             </nav>
@@ -32,7 +39,7 @@
             <img src="image\header\moon.png" id="moon">
             <img src="image\header\mountains_behind.png" id="mountains_behind">
             <h2 id="textLogin"> Hi, Admin <?php echo $_SESSION['username']; ?>! </h2>
-            <a href="novel.php" id="btn">Upload Stories</a>
+            <a href="upload.html" id="btn">Upload Stories</a>
             <img src="image\header\mountains_front.png" id="mountains_front">
         </section>
         <hr><hr><hr>
@@ -40,32 +47,31 @@
         <div id="novels" class="bigbox">
             <div class="releases">
                 <h2>Latest Update</h2>
-                <a href="novel.php"><button>view all</button></a>
+                <a href="novel.php"><button>View All</button></a>
             </div>
 
             <div class="list">
-                <div class="article">
-                    <a href="#"><img src="image\novels\tcf.jpg"></a>
-                    <h3><a href="#">Trash of the Count's Family</a></h3>
-                </div>
+                <?php
+                $query = "SELECT * FROM title";
+                $result = $database->query($query);
 
-                <div class="article">
-                    <a href="#"><img src="image\novels\rim.jpg"></a>
-                    <h3><a href="#">Regressor Instruction Manual</a></h3>
-                </div>
-
-                <div class="article">
-                    <a href="#"><img src="image\novels\twsb.jpg"></a>
-                    <h3><a href="#">What Happens When the Second Male Lead Powers Up</a></h3>
-                </div>
+                while ($row = $database->fetchAssoc($result)) {
+                    ?>
+                    <div class="article">
+                        <a href="detailNovel.php?id=<?= $row['id_title'] ?>">
+                            <img src="image/novels/<?= $row['cover'] ?>">
+                        </a>
+                        <h3><a href="detailNovel.php?id=<?= $row['id_title'] ?>"><?= $row['title'] ?></a></h3>
+                    </div>
+                <?php } ?>
             </div>
         </div>
+
 
         <footer>
             <div class="links">
             <a href="#home">Home</a>
-            <a href="#">Project</a>
-            <a href="#">upload</a>
+            <a href="novel_admin.php">Upload</a>
             </div>
     
             <div class="credit">
