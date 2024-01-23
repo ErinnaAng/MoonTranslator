@@ -1,3 +1,11 @@
+<?php
+include "dbconfig.php";
+include "formHandler.php";
+
+$query = "SELECT * FROM title";
+$result = $database->query($query);
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -40,24 +48,23 @@
         <div id="novels" class="bigbox">
             <div class="releases">
                 <h2>Latest Update</h2>
-                <a href="novel.php"><button>view all</button></a>
+                <a href="novel.php"><button>View All</button></a>
             </div>
 
             <div class="list">
-                <div class="article">
-                    <a href="#"><img src="image\novels\tcf.jpg"></a>
-                    <h3><a href="#">Trash of the Count's Family</a></h3>
-                </div>
+                <?php
+                $query = "SELECT * FROM title";
+                $result = $database->query($query);
 
-                <div class="article">
-                    <a href="#"><img src="image\novels\rim.jpg"></a>
-                    <h3><a href="#">Regressor Instruction Manual</a></h3>
-                </div>
-
-                <div class="article">
-                    <a href="#"><img src="image\novels\twsb.jpg"></a>
-                    <h3><a href="#">What Happens When the Second Male Lead Powers Up</a></h3>
-                </div>
+                while ($row = $database->fetchAssoc($result)) {
+                    ?>
+                    <div class="article">
+                        <a href="detailNovel.php?id=<?= $row['id_title'] ?>">
+                            <img src="image/novels/<?= $row['cover'] ?>">
+                        </a>
+                        <h3><a href="detailNovel.php?id=<?= $row['id_title'] ?>"><?= $row['title'] ?></a></h3>
+                    </div>
+                <?php } ?>
             </div>
         </div>
         
