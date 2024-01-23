@@ -33,6 +33,23 @@ if (isset($_GET['id'])) {
 </head>
 <body>
 
+    <header id="home">
+        <a href="Home.php" class="logo">MT</a>
+        <nav>
+            <ul>
+                <li><a href="homeAdmin.php#home">Home</a></li>
+                <li><a href="novel_admin.php">Upload</a></li>
+                <li><a href="logout.php">Log Out</a></li>
+            </ul>
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="search" id="novelSearch" class="search" placeholder="Search...">
+                    <div class="search-results" id="searchResults"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
     <main role="main">
         <article id="novelDetail">
             <header class="novelheader">
@@ -52,7 +69,7 @@ if (isset($_GET['id'])) {
                         </div>
                         <nav class="links">
                             <a id="readchapter" class="buttonlinks"><button>Edit</button></a>
-                            <a id="readchapter" class="buttonlinks"><button>Delete</button></a>
+                            <a id="readchapter" class="buttonlinks" href="delete.php?id=<?= $id_title ?>"><button>Delete</button></a>
                         </nav>
                     </div>
                 </div>
