@@ -28,7 +28,7 @@ if($cek > 0){
 		$_SESSION['username'] = $username;
 		$_SESSION['usertype'] = "admin";
 		// alihkan ke halaman dashboard admin
-		header("location:halaman_admin.php");
+		header("location:homeAdmin.php");
  
 	// cek jika user login sebagai pegawai
 	}else if($data['usertype'] == "user"){
