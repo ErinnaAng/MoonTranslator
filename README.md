@@ -19,19 +19,11 @@ Moon'Edge is a personal project created for a midterm assignment, serving as the
 
 Moon'Edge caters to individuals who share a passion for reading online novels, especially those who appreciate fan-translated content. The website aims to provide a similar level of excitement and satisfaction as popular platforms like webtoons or Novel Update.
 
-## How to Use
-
-1. **Explore Novels:** Browse through the collection of novels available on Moon'Edge.
-   
-2. **Read Chapters:** Click on your chosen novel to access the latest translated chapters and enjoy the content.
-
-3. **Stay Updated:** Keep track of ongoing novels and receive notifications for new chapters to stay immersed in your favorite stories.
-
 ## Documentation
 
 - **This is the landing page**
 <br>
-<img width="1242" alt="Screenshot 2023-11-17 211437" src="https://github.com/ErinnaAng/uts-webpro/assets/146809821/8271c702-6268-47b3-a9dd-3cfa2bddb732">
+<img width="1240" alt="indexHome" src="https://github.com/ErinnaAng/MoonTranslator/assets/146809821/2b51b0d4-d535-492f-a12e-c8d9dd6a064a">
 <br><br>
 
 - **This is the Lastest Update Box**
@@ -44,10 +36,14 @@ Moon'Edge caters to individuals who share a passion for reading online novels, e
 <img width="1225" alt="Screenshot 2023-11-17 211509" src="https://github.com/ErinnaAng/uts-webpro/assets/146809821/40d2d3dc-07cc-4a13-a170-6b15ad9a9c27">
 <br><br>
 
-- **This is the Login-Sign Up Pop Up**
+- **This is Login Pop Up**
 <br>
-<img width="1232" alt="Screenshot 2023-11-17 211525" src="https://github.com/ErinnaAng/uts-webpro/assets/146809821/629f92e2-39e1-405a-b43d-31a91c39f7b9">
-<img width="1230" alt="Screenshot 2023-11-17 211539" src="https://github.com/ErinnaAng/uts-webpro/assets/146809821/fad1e1fe-7d3a-4dd8-87f0-6870b0f96ec9">
+<img width="1236" alt="loginPopup" src="https://github.com/ErinnaAng/MoonTranslator/assets/146809821/0cd804f5-1afe-4d65-bac1-87780a9655da">
+<br><br>
+
+- **This is Sign-Up Pop Up**
+<br>
+<img width="1232" alt="signUpPopup" src="https://github.com/ErinnaAng/MoonTranslator/assets/146809821/2ab41030-45e3-4dc8-be7a-7cc52d401b3d">
 <br><br>
 
 - **This is the Uver Validation for Sign Up Pop up**
@@ -55,9 +51,14 @@ Moon'Edge caters to individuals who share a passion for reading online novels, e
 <img width="1245" alt="Screenshot 2023-11-17 211604" src="https://github.com/ErinnaAng/uts-webpro/assets/146809821/7c7b3807-3309-49c5-bc12-1ded1a8de60c">
 <br><br>
 
-- **This is the Novels.html page**
+- **This is the Home page for User**
 <br>
-<img width="1241" alt="Screenshot 2023-11-17 211640" src="https://github.com/ErinnaAng/uts-webpro/assets/146809821/953ba248-2724-4040-b686-656897cb1fa5">
+<img width="1237" alt="homeUser" src="https://github.com/ErinnaAng/MoonTranslator/assets/146809821/a2c4b20f-5098-46c0-a590-539f51667a84">
+<br><br>
+
+- **This is the Novel page for User**
+<br>
+<img width="1241" alt="novelUser" src="https://github.com/ErinnaAng/MoonTranslator/assets/146809821/1df880ad-ecdd-4976-8d43-a2acd33dac64">
 <br><br>
 
 - **This is the Search-Bar in Novels.html page**
@@ -65,10 +66,35 @@ Moon'Edge caters to individuals who share a passion for reading online novels, e
 <img width="421" alt="Screenshot 2023-11-17 224345" src="https://github.com/ErinnaAng/uts-webpro/assets/146809821/943aa68a-a218-417c-9240-e2bb256fce9b">
 <br>
 
+- **This is the Novel Detail Page for User**
+<br>
+<img width="1233" alt="novelDetailUser" src="https://github.com/ErinnaAng/MoonTranslator/assets/146809821/f58bd307-b27b-4538-8e8e-1e61f5b2c89f">
+<br><br>
+
+- **This is the Home Page for Admin**
+<br>
+<img width="1229" alt="homeAdmin" src="https://github.com/ErinnaAng/MoonTranslator/assets/146809821/54a61560-1b50-4be3-85e9-139f5749bccb">
+<br><br>
+
+- **This is the Novel Page for Admin**
+<br>
+<img width="1232" alt="novelAdmin" src="https://github.com/ErinnaAng/MoonTranslator/assets/146809821/51f7877a-a3c0-4c61-b6d0-4aad887f1fce">
+<br><br>
+
+- **This is the upload feature pop up for Admin**
+<br>
+<img width="1226" alt="UploadPopup" src="https://github.com/ErinnaAng/MoonTranslator/assets/146809821/49f7438b-1c30-47ec-8659-7fd12deac4cb">
+<br><br>
+
+- **This is the Novel-Detaile for Admin**
+<br>
+<img width="1229" alt="novelDetailAdmin" src="https://github.com/ErinnaAng/MoonTranslator/assets/146809821/140ff508-2e61-4962-a7b6-bb1a404a4ce3">
+<br><br>
+
 ## Future Plans
 
 - **Enhancements:** Moon'Edge will continue to evolve with enhancements and features based on user feedback. 
 - **Expanded Library:** Expect a growing library of novels as the project progresses, offering a diverse range of genres and themes.
 - **Making Store:** Moon'Edge soon will open a new branch web for selling all kind of goods that still related to the novels.
 
-*Note: Moon'Edge is a project for my midterm-exam. So the project may be drastically chnage base on the professor assessment rubric*
+*Note: Moon'Edge is a project for my midterm and final-exam. So the project may be drastically chnage base on the professor assessment rubric*
