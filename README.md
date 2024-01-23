@@ -98,3 +98,6 @@ Moon'Edge caters to individuals who share a passion for reading online novels, e
 - **Making Store:** Moon'Edge soon will open a new branch web for selling all kind of goods that still related to the novels.
 
 *Note: Moon'Edge is a project for my midterm and final-exam. So the project may be drastically chnage base on the professor assessment rubric*
+
+And this is my stories medium.com link
+https://medium.com/@erinnaliem1144/this-is-about-my-project-e92ed1f7bcec
